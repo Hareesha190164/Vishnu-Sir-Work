@@ -1,0 +1,46 @@
+package hari;
+public class Pojo_Class {
+
+       private int id;
+        public String name;
+        protected double salary;
+
+        public void setSalary(double salary) {
+            this.salary = salary;
+        }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+            return id;
+        }
+        private double result(){
+            return id+salary;
+        }
+
+        public double Hello(){
+
+            return result();
+        }
+
+    }
+    
+    
+    
+    
+    
+    
+    // Another Class
+    
+  import hari.Pojo_Class;
+   public class Pojo_classDemo {
+   public static void main(String[] args) {
+        Pojo_Class po=new Pojo_Class();
+        po.setId(121);
+        po.name="Hello";
+        po.setSalary(121.12);
+        System.out.println(po.Hello());
+    }
+}
