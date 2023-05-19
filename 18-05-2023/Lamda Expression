@@ -1,0 +1,48 @@
+package com.java.lamda;
+
+
+interface Shape{
+     void draw();
+}
+
+
+
+class Rectangle implements Shape{
+
+    @Override
+    public void draw() {
+        System.out.println("Rectangle Class");
+    }
+}
+
+class Square implements Shape{
+
+    @Override
+    public void draw() {
+        System.out.println("Square Class");
+    }
+}
+
+class Circle implements Shape{
+
+    @Override
+    public void draw() {
+        System.out.println("Circle Class");
+    }
+}
+
+public class JavaExample {
+
+    public static void main(String[] args) {
+        Shape Rectangle=()-> System.out.println("Rectangle Class Lamda Expression");
+        Rectangle.draw();
+        Rectangle res=new Rectangle();
+        res.draw();
+
+
+    }
+   void print(Shape sh){
+        Shape.draw();
+    }
+
+}
