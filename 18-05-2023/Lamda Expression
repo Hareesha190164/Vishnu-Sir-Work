@@ -6,7 +6,6 @@ interface Shape{
 }
 
 
-
 class Rectangle implements Shape{
 
     @Override
